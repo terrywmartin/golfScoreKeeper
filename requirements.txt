@@ -1,0 +1,12 @@
+wheel
+Pillow
+gunicorn
+django-dotenv
+argon2-cffi
+argon2-cffi-bindings
+django
+django-htmx
+django-storages
+boto3
+psycopg2-binary
+celery
