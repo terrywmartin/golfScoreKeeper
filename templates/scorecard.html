@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Score Card</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      margin-top: 20px;
+    }
+    th, td {
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center">Golf Score Card</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Hole</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <!-- Add more holes as needed -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          
+          <th>Par</th>
+          <th>4</th>
+          <th>3</th>
+          <th>5</th>
+          <th>4</th>
+          <th>4</th>
+          <!-- Add par scores for other holes as needed -->
+        </tr>
+       
+        <tr>
+          <td>Golfer 1</td>
+          <td></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <!-- Add score inputs for other holes as needed -->
+        </tr>
+        <tr>
+          <td>Golfer 2</td>
+          <td></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <!-- Add score inputs for other holes as needed -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Link to Bootstrap JS and jQuery (required for some Bootstrap features) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
