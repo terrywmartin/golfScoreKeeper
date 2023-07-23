@@ -1,0 +1,36 @@
+    <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Accordion without outline borders</h5>
+
+              <!-- Accordion without outline borders -->
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+
+              {% for hole in holes %}
+              
+                <div class="accordion-item">
+
+                  <h2 class="accordion-header" id="flush-heading{{ hole.hole }}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ hole.hole }}" aria-expanded="false" aria-controls="flush-collapse{{ hole.hole }}">
+                     Hole {{ hole.hole }} - Par {{ hole.par }} - Distance: {{ hole.distance }}
+                    </button>
+                  </h2>
+                  <div id="flush-collapse{{ hole.hole }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ hold.hole }}" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"><p>Hole {{ hole.hole }} Description here.</p>
+                    {% if hole.hazards|length > 0 %}<h6>Hazards:</h6>
+                    <div>
+                      <ul>
+                      {% for hazzard in hole.hazards %}
+                        <li>{{ hazzard }}</li>
+                      {% endfor %}
+                      </ul>
+                    </div>
+                    {% endif %}
+                      </div>
+                    
+                  </div>
+                </div>
+              {% endfor %}
+              </div><!-- End Accordion without outline borders -->
+
+            </div>
+          </div>

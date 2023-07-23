@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'users.apps.UsersConfig',
     'game.apps.GameConfig',
+    'course.apps.CourseConfig',
     'storages',
 ]
 
